@@ -10,23 +10,25 @@ const Header = () => {
             Realtor's Name <img src="" alt="" />
           </div>
           <ul className="header_list flex space-bet">
-            <li className="header_link">
-              <Link to="/" >Home</Link>
+            <li className="header_list_link">
+              <Link to="/">Home</Link>
             </li>
-            <li className="header_link">
+            <li className="header_list_link">
               {" "}
               <Link to="/findHome">Find a Home</Link>
             </li>
-            <li className="header_link">
+            <li className="header_list_link">
               {" "}
               <Link to="/homeValuation">Home Valuation</Link>
             </li>
-            <li className="header_link">
+            <li className="header_list_link">
               {" "}
               <Link to="/about">About Me</Link>
             </li>
-            <li className="header_link">
-              <Link to="/contact">Contact Me</Link>
+            <li className="header_list_link cta-link ">
+              <Link className="border-round" to="/contact">
+                Contact Me
+              </Link>
             </li>
           </ul>
         </div>

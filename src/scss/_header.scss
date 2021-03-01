@@ -1,5 +1,6 @@
 .header {
-  height: 10vh;
+  height: 12vh;
+    background-color: $black;
 
   &_nav {
     height: 100%;
@@ -11,37 +12,29 @@
 
   &_logo {
     font-size: 2rem;
+    color: $white;
   }
 
   &_list {
-    width: 35%;
+    width: 50%;
     &_link {
-      color: $black;
+      color: $white;
+      display: flex;
+      align-items: center;
       @media only screen and (max-width: $tablet-breakpoint) {
         display: none;
       }
 
      a {
-    position: relative;
-    &:after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 2px;
-      display: block;
-      margin-top: 5px;
-      right: 0;
-      background: $black;
-      transition: 0.4s ease;
+        font-size: 1.4rem;
+        transition: all 0.2s;
+         &:hover {
+      color: $cta;   
+     }
+
+  
     }
-    &:hover {
-      color: $black;
-      &:after {
-        width: 100%;
-        left: 0;
-        background: $black;
-      }
-    }
+   
   }
     }
     @media only screen and (max-width: $tablet-breakpoint) {
@@ -49,4 +42,3 @@
       justify-content: flex-end;
     }
   }
-}

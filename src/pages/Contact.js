@@ -7,7 +7,7 @@ const Contact = () => {
             <FormField inputType="text" labelFor="First Name"/>
             <FormField inputType="text" labelFor="Last Name"/>
             <FormField inputType="email" labelFor="Email"/>
-            <FormField inputType="Message" labelFor="Message"/>
+            {/* <FormField inputType="Message" labelFor="Message"/> */}
         </div>
     )
 }
