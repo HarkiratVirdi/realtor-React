@@ -1,0 +1,162 @@
+.mt-m {
+  margin-top: 2rem;
+}
+
+.mr-m {
+  margin-right: 2rem;
+}
+.mr-l {
+  margin-right: 3rem;
+}
+.mr-s {
+  margin-right: 1rem;
+}
+.underline {
+  text-decoration: underline;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.mt-l {
+  margin-top: 3.5rem;
+}
+.mt-xl {
+  margin-top: 6vw;
+}
+.mb-s {
+  margin-bottom: 1.3vw;
+}
+.mb-m {
+  margin-bottom: 2vw;
+}
+.mb-xl {
+  margin-bottom: 6rem;
+}
+.mb-l {
+  margin-bottom: 3.5vw;
+}
+.ml-s {
+  margin-left: 1vw;
+}
+.ml-m {
+  margin-left: 2vw;
+}
+.ml-l {
+  margin-left: 3.5vw;
+}
+.m-hide {
+  @media only screen and (max-width: $mobile-breakpoint) {
+    display: none !important;
+  }
+}
+.t-hide {
+  @media only screen and (max-width: $tablet-breakpoint) {
+    display: none !important;
+  }
+}
+
+.t-show {
+  @media only screen and (min-width: $tablet-breakpoint) {
+    display: none;
+  }
+
+  @media only screen and (max-width: $tablet-breakpoint) {
+    display: inline-block;
+  }
+}
+
+.t-w100 {
+  @media only screen and (max-width: $tablet-breakpoint) {
+    width: 100% !important;
+  }
+}
+
+.mt-s {
+  margin-top: 1vw;
+}
+
+.m-abs {
+  @media only screen and (max-width: $mobile-breakpoint) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.heading {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.container_sub {
+  // padding: 0 2rem;
+  margin: auto;
+
+  max-width: 1700px;
+  @media only screen and (max-width: $tablet-breakpoint) {
+    margin: 0 auto;
+    padding: 0rem;
+  }
+}
+
+.overlay_text {
+  font-size: 10vw;
+  color: rgb(20, 20, 20);
+  font-weight: 800;
+
+  @media only screen and (max-width: $tablet-breakpoint) {
+    font-size: 20vw;
+  }
+}
+
+.container_right {
+  overflow: hidden;
+  margin-left: auto;
+  max-width: 1200px;
+  width: 70%;
+
+  @media only screen and (max-width: $tablet-breakpoint) {
+    margin: 0 auto;
+    padding: 0rem;
+    width: 100%;
+  }
+}
+
+.modern {
+  &_input {
+    border: none;
+    border-bottom: 1px solid $white;
+    outline: none;
+    background-color: transparent;
+
+    ::placeholder {
+      color: $white;
+    }
+  }
+}
+
+.pabs-center {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.flex{
+    display: flex;
+}
+
+.jus-cen{
+    justify-content: center;
+}
+
+.space-bet{
+    justify-content: space-between;
+}
+
+.align-cen{
+    align-items: center;
+}

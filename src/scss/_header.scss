@@ -1,0 +1,52 @@
+.header {
+  height: 10vh;
+
+  &_nav {
+    height: 100%;
+
+    &_inner{
+        height: 100%;
+    }
+  }
+
+  &_logo {
+    font-size: 2rem;
+  }
+
+  &_list {
+    width: 35%;
+    &_link {
+      color: $black;
+      @media only screen and (max-width: $tablet-breakpoint) {
+        display: none;
+      }
+
+     a {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      display: block;
+      margin-top: 5px;
+      right: 0;
+      background: $black;
+      transition: 0.4s ease;
+    }
+    &:hover {
+      color: $black;
+      &:after {
+        width: 100%;
+        left: 0;
+        background: $black;
+      }
+    }
+  }
+    }
+    @media only screen and (max-width: $tablet-breakpoint) {
+      width: auto;
+      justify-content: flex-end;
+    }
+  }
+}

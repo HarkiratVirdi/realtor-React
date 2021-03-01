@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap');
+
+$white: #fff;
+$black: #252526;
+$grey: #E4E2E0;
+$cta: #C7BA98;
+$font-primary: 'Crimson Text', serif;
+$tablet-breakpoint: 870px;
+$mobile-breakpoint: 500px;
+
+::selection {
+  background-color: $cta;
+  color: $black;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: $font-primary;
+
+  @media only screen and (max-width: $tablet-breakpoint) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: $mobile-breakpoint) {
+    font-size: 50%;
+  }
+}
+
+body {
+  background: $white;
+  overflow-x: hidden;
+  // transition: background 0.5s;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  // overflow: hidden;
+  padding: 0 2rem;
+
+  @media only screen and (max-width: $mobile-breakpoint) {
+    padding: 0 1rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Mapgl from "react-map-gl";
+import Mapgl, { Marker } from "react-map-gl";
 
 const Map = () => {
   const [viewport, setViewport] = useState({
@@ -17,6 +17,7 @@ const Map = () => {
         {...viewport}
         onViewportChange={(viewport) => {
           setViewport(viewport);
+          console.log("viewport", viewport);
         }}
         mapStyle="mapbox://styles/harkiratsinghvirdi/cklehx9sk15x617rx2kvkc6wv"
       ></Mapgl>
