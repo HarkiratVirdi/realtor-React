@@ -16,9 +16,47 @@
 
 &__search__form{
     position: absolute;
-    top: 50%;
+    top: 42%;
+    width: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+    &__inputs{
+        position: relative;
+        input:nth-of-type(1){
+        border-radius: 100px;
+        background-color: $white;
+        border: 1px solid $cta;
+        outline: none;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1.8rem;
+    }
+
+        input:nth-of-type(2)
+        {
+            background-color: $cta;
+            color: $black;
+            padding: 1.9rem 3rem;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            border-radius: 100px;
+            right: 0;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+
+            &:hover{
+                background-color:#d6c8a5;
+            }
+        }
+
+}
+
 
 }
