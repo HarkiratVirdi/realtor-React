@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Scrollbar from "smooth-scrollbar";
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -10,9 +11,13 @@ import "../src/scss/main.scss";
 
 
 function App() {
+  useEffect(() => {
+    Scrollbar.init(document.querySelector('.App'));
+  }, []);
+
   return (
     <Router>
-      <div className="App">
+      <div className="App" style={{width: '100%', height: '100%'}}>
         <Switch>
           <Route exact path="/">
             <Home />

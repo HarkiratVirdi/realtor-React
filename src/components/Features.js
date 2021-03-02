@@ -6,7 +6,7 @@ const Features = () => {
       <div className="container">
         <div className="features mt-xl">
           <FeatureCard
-            feature="More than 1000+ Houses sold and Bought.Generated more than 30 Million in Revenue"
+            feature="More than 1000+ Houses sold and Bought.Generated more than 30 Million in Revenue."
             heading="Top 1% in Sales"
           />
           <FeatureCard
