@@ -3,7 +3,7 @@ import Toronto from '../pexels-scott-webb-593150.jpg';
 
 const HomeCard = ({homeDetails}) => {
     return (
-        <div className="homecard">
+        <div className="homecard mt-l mb-l">
             <div className="homecard__img">
                 <img src={Toronto} alt=""/>
             </div>
