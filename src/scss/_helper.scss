@@ -179,6 +179,10 @@
       position: relative;
       top: 0;
       align-items: center;
+
+        @media only screen and (max-width: $tablet-breakpoint) {
+  flex-direction: column;
+  }
     }
 
     .swiper-wrapper{
@@ -187,6 +191,10 @@
 
     .swiper-button-next, .swiper-button-prev{
       color: $black;
+
+              @media only screen and (max-width: $tablet-breakpoint) {
+                top: 60%;
+  }
     }
 
     .swiper-slide {
@@ -208,4 +216,9 @@
       -ms-flex-align: center;
       -webkit-align-items: center;
       align-items: center;
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
     }

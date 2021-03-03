@@ -19,7 +19,7 @@ const onSearch = async() => {
                     <input type="text" onChange={(e) => setAddress(e.target.value)} value={address} placeholder="Search by Postal Code, Neighbourhood, City or Address"/>
                     
                     
-                    {window.innerWidth > 870 ? <button onClick={onSearch}>Search Home</button> : <button value="Search"/>
+                    {window.innerWidth > 870 ? <button onClick={onSearch}>Search Home</button> : <button onClick={onSearch}>Search</button>
                     }
                 </div>
                 </div>
