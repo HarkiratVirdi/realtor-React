@@ -1,5 +1,10 @@
 import React, {useState} from 'react'
 import SwiperCore, {Lazy, Navigation, Pagination, Scrollbar, A11y} from "swiper";
+import Toronto from "../pexels-maarten-van-den-heuvel-4490699.jpg";
+import Ottawa from "../pexels-tetyana-kovyrina-1045915 (1).jpg";
+import Tobermory from "../flowerpot-island-lighthouse.jpg";
+import Niagara from "../pexels-zachary-debottis-1816237.jpg";
+import Missi  from "../pexels-scott-webb-593150.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
@@ -7,7 +12,6 @@ import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 // import "swiper/components/lazy/lazy";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Lazy]);
-
 
 const Carousel = () => {
         return (
@@ -17,7 +21,7 @@ const Carousel = () => {
               navigation
               lazy
            centeredSlides={true}
-              spaceBetween={50}
+              spaceBetween={20}
               slidesPerView={3}
             >
               <div className="h-1 carousel_line">
@@ -25,17 +29,12 @@ const Carousel = () => {
                   <p className="h-2">over Ontario</p>
               </div>
               <SwiperSlide>
-                Toronto Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Molestiae distinctio soluta consequuntur eum ut
-                doloremque, reprehenderit possimus, voluptatibus saepe sit
-                asperiores recusandae itaque eveniet et excepturi officia
-                repellendus ad obcaecati. Quibusdam qui fugit quam commodi
-                dolorum eligendi, consequuntur, temporibus ullam aspernatur
-                tempore quaerat minima suscipit non iste modi. Tempora, saepe?{" "}
+                <img src={Toronto} alt=""/>
               </SwiperSlide>
-              <SwiperSlide>Brampton</SwiperSlide>
-              <SwiperSlide>Oakville</SwiperSlide>
-              <SwiperSlide>Oven South</SwiperSlide>
+              <SwiperSlide><img src={Ottawa} alt=""/></SwiperSlide>
+              <SwiperSlide><img src={Tobermory} alt=""/></SwiperSlide>
+              <SwiperSlide><img src={Niagara} alt=""/></SwiperSlide>
+              <SwiperSlide><img src={Missi} alt=""/></SwiperSlide>
             </Swiper>
           </div>
         );
