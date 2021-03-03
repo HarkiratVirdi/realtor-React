@@ -70,9 +70,9 @@ const Carousel = () => {
         preventInteractionOnTransition={false}
         
       >
-        <div className="h-1 carousel_line">
-          <p className="h-2">I Deal all</p>
-          <p className="h-2">over Ontario</p>
+        <div className="h-2 carousel_line">
+          <p className="h-3 heading">I Deal all</p>
+          <p className="h-3 heading">over Ontario</p>
         </div>
         <SwiperSlide>
           <img src={Toronto} alt="" />

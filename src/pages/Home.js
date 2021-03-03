@@ -3,6 +3,7 @@ import Carousel from '../components/Carousel';
 import Features from '../components/Features';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
+import HomeAbout from '../components/HomeAbout';
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
             <Hero/>
             <Features/>
             <Carousel/>
+            <HomeAbout/>
         </div>
     )
 }
