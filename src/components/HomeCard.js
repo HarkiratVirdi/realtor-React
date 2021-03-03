@@ -9,7 +9,7 @@ const HomeCard = ({homeDetails}) => {
             </div>
             <div className="homecard__name h-4">Modern Glass Villa</div>
             <div className="homecard__details"></div>
-            <div className="homecard__contact h-4">Contact Me</div>
+            <div className="homecard__contact h-4 cursor-pointer">Contact Me</div>
         </div>
     )
 }

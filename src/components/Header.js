@@ -19,7 +19,7 @@ const Header = () => {
             </li>
             <li className="header_list_link">
               {" "}
-              <Link to="/homeValuation">Home Valuation</Link>
+              <Link to="/contact">Home Valuation</Link>
             </li>
             <li className="header_list_link">
               {" "}

@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import React from "react";
+import {Switch, Route} from 'react-router-dom'
 import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -10,12 +10,8 @@ import "../src/scss/main.scss";
 
 
 function App() {
-  useEffect(() => {
-        
-  }, []);
 
   return (
-    <Router>
       <div className="App">
         <Header />
         <Switch>
@@ -36,7 +32,6 @@ function App() {
           </Route>
         </Switch>
       </div>
-    </Router>
   );
 }
 

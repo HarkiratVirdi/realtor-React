@@ -228,9 +228,24 @@
       }
     }
 
+.swiper-button-prev.swiper-button-disabled
+{
+  opacity: 0;
+}
+
+
+.swiper-button-next.swiper-button-disabled
+{
+  opacity: 0;
+}
+
     .border-cta{
       border: 1px solid $cta;
       outline: none;
+    }
+
+    .cursor-pointer{
+      cursor: pointer;
     }
 
     .checkbox{
