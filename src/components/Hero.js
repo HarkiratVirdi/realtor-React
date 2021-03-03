@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Geocode from "react-geocode";
 import axios from 'axios';
 import House from '../pexels-pixabay-276551.jpg';
 const Hero = () => {

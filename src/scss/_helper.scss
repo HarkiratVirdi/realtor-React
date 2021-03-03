@@ -21,28 +21,28 @@
   margin-top: 3.5rem;
 }
 .mt-xl {
-  margin-top: 6vw;
+  margin-top: 6rem;
 }
 .mb-s {
-  margin-bottom: 1.3vw;
+  margin-bottom: 1.3rem;
 }
 .mb-m {
-  margin-bottom: 2vw;
+  margin-bottom: 2rem;
 }
 .mb-xl {
   margin-bottom: 6rem;
 }
 .mb-l {
-  margin-bottom: 3.5vw;
+  margin-bottom: 3.5rem;
 }
 .ml-s {
-  margin-left: 1vw;
+  margin-left: 1rem;
 }
 .ml-m {
-  margin-left: 2vw;
+  margin-left: 2rem;
 }
 .ml-l {
-  margin-left: 3.5vw;
+  margin-left: 3.5rem;
 }
 .m-hide {
   @media only screen and (max-width: $mobile-breakpoint) {
@@ -72,7 +72,7 @@
 }
 
 .mt-s {
-  margin-top: 1vw;
+  margin-top: 1rem;
 }
 
 .cta-link a{
@@ -111,12 +111,12 @@
 }
 
 .overlay_text {
-  font-size: 10vw;
+  font-size: 10rem;
   color: rgb(20, 20, 20);
   font-weight: 800;
 
   @media only screen and (max-width: $tablet-breakpoint) {
-    font-size: 20vw;
+    font-size: 20rem;
   }
 }
 
@@ -170,3 +170,37 @@
 .align-cen{
     align-items: center;
 }
+
+
+   .swiper-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: relative;
+      top: 0;
+      align-items: center;
+    }
+
+    .swiper-wrapper{
+      order: 2;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      width: 300px;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }

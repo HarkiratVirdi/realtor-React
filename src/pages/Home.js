@@ -1,4 +1,5 @@
 import React from 'react'
+import Carousel from '../components/Carousel';
 import Features from '../components/Features';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
@@ -10,6 +11,7 @@ const Home = () => {
             <Header/>
             <Hero/>
             <Features/>
+            <Carousel/>
         </div>
     )
 }
