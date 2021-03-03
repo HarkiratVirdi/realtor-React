@@ -52,10 +52,12 @@
         
         img{
             display: block;
+             min-height: 100%;
         }
 
               @media only screen and (max-width: $tablet-breakpoint) {
                 width: 100%;
+               
   }
             }
 
@@ -77,6 +79,10 @@
     display: block;
     width: 25rem;
     background-color: $black;
+
+          @media only screen and (max-width: $tablet-breakpoint) {
+                width: 100%;
+  }
 
 &:hover{
     background-color: #333;

@@ -4,6 +4,7 @@ import Features from '../components/Features';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import HomeAbout from '../components/HomeAbout';
+import Maplocation from '../components/Maplocation';
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
             <Features/>
             <Carousel/>
             <HomeAbout/>
+            <Maplocation/>
         </div>
     )
 }
