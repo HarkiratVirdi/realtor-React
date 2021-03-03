@@ -22,7 +22,7 @@ const Carousel = () => {
               lazy
            centeredSlides={true}
               spaceBetween={20}
-              slidesPerView={3}
+              slidesPerView={4}
             >
               <div className="h-1 carousel_line">
                   <p className="h-2">I Deal all</p>
