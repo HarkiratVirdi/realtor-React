@@ -88,3 +88,26 @@
     background-color: #333;
 }
 }
+
+
+.formfield
+{
+    
+    display: flex;
+    flex-direction: column;
+width: 45%;
+flex-wrap: wrap;
+    margin-right: 5%;
+    input{
+        padding: 1rem;
+        border: 1px solid $cta;
+        outline: none;
+
+    }
+}
+
+.contact{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}

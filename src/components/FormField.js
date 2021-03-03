@@ -2,9 +2,9 @@ import React from 'react'
 
 const FormField = ({labelFor, inputType}) => {
     return (
-        <div className="formfield flex align-cen space-bet">
+        <div className="formfield h-4 mt-l mb-l">
             <label htmlFor={labelFor}>{labelFor}</label>
-            <input type={inputType} />
+            <input className="" type={inputType} />
         </div>
     )
 }
