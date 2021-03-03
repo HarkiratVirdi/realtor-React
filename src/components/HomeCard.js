@@ -1,15 +1,15 @@
 import React from 'react'
-import Toronto from '../pexels-scott-webb-593150.jpg';
+import {Link} from 'react-router-dom';
 
-const HomeCard = ({homeDetails}) => {
+const HomeCard = ({mls, photo, details, type, address}) => {
     return (
         <div className="homecard mt-l mb-l">
             <div className="homecard__img">
-                <img src={Toronto} alt=""/>
+                <img src={photo} alt=""/>
             </div>
-            <div className="homecard__name h-4">Modern Glass Villa</div>
+            <div className="homecard__name h-4">{address}</div>
             <div className="homecard__details"></div>
-            <div className="homecard__contact h-4 cursor-pointer">Contact Me</div>
+            <div className="homecard__contact h-4 cursor-pointer"><Link to="/contact">Contact Me</Link></div>
         </div>
     )
 }

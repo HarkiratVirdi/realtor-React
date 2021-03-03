@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import HomeCard from "../components/HomeCard";
 import axios from "axios";
+import Loader from 'react-loader-spinner'
 
 const FindHome = () => {
   const [address, setAddress] = useState("");
@@ -16,19 +17,19 @@ const FindHome = () => {
       `http://www.mapquestapi.com/geocoding/v1/address?key=pvsghb2CWyLCu9X61thqVq2X8e5FtuP7&location=${address}`
     )
       .then(async(res) => {
-        Longitude = res.data.results[0].locations[0].latLng.lng;
-        Latitude = res.data.results[0].locations[0].latLng.lat;
+        Longitude = res.data.results[0].locations[0].latLng.lng - 0.005;
+        Latitude = res.data.results[0].locations[0].latLng.lat - 0.005;
 
         if (Math.sign(Latitude) === -1) {
-          LatitudeMax = Latitude  - 0.004;
+          LatitudeMax = Latitude  - 0.005;
         } else {
-          LatitudeMax = Latitude + 0.004;
+          LatitudeMax = Latitude + 0.005;
         }
 
         if (Math.sign(Longitude) === -1) {
-          LongitudeMax = Longitude +0.004;
+          LongitudeMax = Longitude + 0.005;
         } else {
-          LongitudeMax = Longitude -0.004;
+          LongitudeMax = Longitude -0.005;
         }
       
 
@@ -101,8 +102,24 @@ const FindHome = () => {
       </div>
       <div className="container">
         <div className="findHome_property">
-                {properties.map((property) => {
-                    return <HomeCard photo={property.Photo[0].HighResPath} mls={property.MlsNumber} price={property.Property.Price} lat={property.Property.Address.Latitude} long={property.Property.Address.Longitude} address={property.Property.Address.AddressText} type={property.Property.Type}/>
+                {properties.map((property, index) => {
+                    return (
+                      <HomeCard
+                        key={index}
+                        details={property}
+                        mls={property.MlsNumber}
+                        photo={
+                          property.Property.Photo
+                            ? property.Property.Photo[0].HighResPath
+                            : "https://us.rosco.com/sites/default/files/Rosco_Screens_FrontWhite.jpg"
+                        }
+                        price={property.Property.Price}
+                        lat={property.Property.Address.Latitude}
+                        long={property.Property.Address.Longitude}
+                        address={property.Property.Address.AddressText}
+                        type={property.Property.Type}
+                      />
+                    );
                 })}
         </div>
       </div>
