@@ -1,7 +1,7 @@
 .homecard{
     width: 30%;
     height: 40rem;
-    background-color: grey;
+    background-color: #eee;
     position: relative;
     top: 0;
     margin-right: 3%;
@@ -18,9 +18,9 @@
             //    margin-right: 2%;
   }
 &__name{
-    padding: 1.4rem;
+    padding: .4rem;
     text-align: center;
-    width: 80%;
+    width: 105%;
     background-color: $black;
     color: $white;
     position: absolute;

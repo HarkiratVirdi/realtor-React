@@ -6,7 +6,46 @@ import Loader from 'react-loader-spinner'
 const FindHome = () => {
   const [address, setAddress] = useState("");
   const [properties, setproperties] = useState([]);
-    const [pins, setPins] = useState([]);
+
+
+    const fetchInitial = async() =>{
+         const options = {
+           method: "GET",
+           url:
+             "https://realtor-canadian-real-estate.p.rapidapi.com/properties/list-residential",
+           params: {
+             LatitudeMax: "81.14747595814636",
+             CurrentPage: "1",
+             LongitudeMin: "-136.83037765324116",
+             LongitudeMax: "-10.267941690981388",
+             RecordsPerPage: "10",
+             LatitudeMin: "-22.26872153207163",
+             SortOrder: "A",
+             NumberOfDays: "0",
+             BedRange: "0-0",
+             CultureId: "1",
+             BathRange: "0-0",
+             SortBy: "1",
+             PriceMin: "0",
+           },
+           headers: {
+             "x-rapidapi-key":
+               "217ca471f3msh21cad1c58a76913p1b91cfjsne2fb3cdd0d8b",
+             "x-rapidapi-host": "realtor-canadian-real-estate.p.rapidapi.com",
+           },
+         };
+
+        await axios
+           .request(options)
+           .then(function (response) {
+             console.log(response.data);
+           })
+           .catch(function (error) {
+             console.error(error);
+           });
+    }
+fetchInitial();
+
   const onSearch = async () => {
     let Latitude;
     let Longitude;
@@ -14,22 +53,22 @@ const FindHome = () => {
     let LatitudeMax;
 
     await axios(
-      `http://www.mapquestapi.com/geocoding/v1/address?key=pvsghb2CWyLCu9X61thqVq2X8e5FtuP7&location=${address}`
+      'http://www.mapquestapi.com/geocoding/v1/address?key=pvsghb2CWyLCu9X61thqVq2X8e5FtuP7&location=' + address + ',Canada'
     )
       .then(async(res) => {
         Longitude = res.data.results[0].locations[0].latLng.lng - 0.005;
-        Latitude = res.data.results[0].locations[0].latLng.lat - 0.005;
+        Latitude = res.data.results[0].locations[0].latLng.lat -0.005;
 
         if (Math.sign(Latitude) === -1) {
-          LatitudeMax = Latitude  - 0.005;
+          LatitudeMax = Latitude  - 0.01;
         } else {
-          LatitudeMax = Latitude + 0.005;
+          LatitudeMax = Latitude + 0.01;
         }
 
         if (Math.sign(Longitude) === -1) {
-          LongitudeMax = Longitude + 0.005;
+          LongitudeMax = Longitude + 0.01;
         } else {
-          LongitudeMax = Longitude -0.005;
+          LongitudeMax = Longitude -0.01;
         }
       
 
