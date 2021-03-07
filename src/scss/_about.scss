@@ -1,15 +1,32 @@
 .about{
     display: flex;
-    // align-items: center;
+
+    @media only screen and (max-width: $tablet-breakpoint) {
+        flex-direction: column;
+  }
+
     &__content{
         width: 60%;
         order: 1;
+
+        @media only screen and (max-width: $tablet-breakpoint) {
+        width: 100%;
+        margin-bottom: 2rem;
+  }
+
     }
 
     &__image{
         width: 40%;
         order: 2;
         height: 70vh;
+
+
+        
+@media only screen and (max-width: $tablet-breakpoint) {
+        width: 100%;
+  }
+
 
         img{
             width: 100%;
