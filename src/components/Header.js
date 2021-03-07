@@ -1,14 +1,15 @@
 import React from "react";
 import {Link} from 'react-router-dom';
+import Girl from '../pexels-andrea-piacquadio-733872.jpg';
 
 const Header = () => {
   return (
     <header className="header">
       <nav className="header_nav">
         <div className="container header_nav_inner flex space-bet align-cen">
-          <div className="header_logo h-3">
-            Realtor's Name <img src="" alt="" />
-          </div>
+          <Link to="/" className="header_logo h-3">
+            <img src={Girl} alt="" /> Suzanne Diloski
+          </Link>
           <ul className="header_list flex space-bet">
             <li className="header_list_link">
               <Link to="/">Home</Link>
