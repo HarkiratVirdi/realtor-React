@@ -32,6 +32,14 @@ background-color: $black;
     padding-right: 2%;
     height: 20vh;
     align-items: center;
+
+    li{
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
 }
 
 }
