@@ -15,7 +15,7 @@ const About = () => {
               <div className="h-4 mb-s">
                 Languages: English, Punjabi, French, Hindi
               </div>
-              <div className="about__overview h-4 pr-m textjustify">
+              <div className="about__overview h-4 textjustify">
                 Suzzanne has over 12 years experience in the client service industry
                 serving the Peel Region and surrounding areas in the GTA
                 specializing in residential and rural properties. Suzzanne is one of

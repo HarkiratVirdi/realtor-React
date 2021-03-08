@@ -7,7 +7,7 @@ const Maplocation = () => {
     latitude: 43.683334,
     longitude: -79.76667,
     width: "100vw",
-    height: "70vh",
+    height: "50vh",
     zoom: 12,
   });
 
