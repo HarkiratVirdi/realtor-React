@@ -85,6 +85,15 @@
     }
 }
 
+.btn-cta{
+    background-color: $cta !important;
+    color: $black !important;
+
+    &:hover{
+        background-color: lighten(#c7ba98, 5%) !important;
+    }
+}
+
 .btn-contact{
     padding: 1.5rem 3rem;
     color: $cta;
@@ -128,11 +137,3 @@ flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
-
-// .map{
-//     height: 70vh;
-
-//     @media only screen and (max-width: $mobile-breakpoint) {
-//         height: 30vh;
-//   }
-// }

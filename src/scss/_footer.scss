@@ -1,0 +1,23 @@
+.footer{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+background-color: $black;
+
+    @media only screen and (max-width: $mobile-breakpoint) {
+    height: auto;
+  }
+
+
+  &__email{
+      display: flex;
+    
+      .formfield label{
+        color: $cta;
+      }
+
+    }
+
+
+
+}
