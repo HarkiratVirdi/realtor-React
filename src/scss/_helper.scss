@@ -2,12 +2,11 @@
   margin-top: 2rem;
 }
 
-.pr-m{
+.pr-m {
   padding-right: 5rem;
 }
 
-.textjustify
-{
+.textjustify {
   text-align: justify;
 }
 
@@ -53,6 +52,11 @@
 .ml-l {
   margin-left: 3.5rem;
 }
+
+.show {
+  display: block;
+}
+
 .m-hide {
   @media only screen and (max-width: $mobile-breakpoint) {
     display: none !important;
@@ -65,7 +69,7 @@
 }
 
 .t-show {
-  @media only screen and (min-width: $tablet-breakpoint) {
+  @media only screen and (min-width: $mobile-breakpoint) {
     display: none;
   }
 
@@ -80,8 +84,7 @@
   }
 }
 
-.w-100
-{
+.w-100 {
   width: 100% !important;
 }
 
@@ -89,14 +92,18 @@
   margin-top: 1rem;
 }
 
-.cta-link a{
-    background: $cta;
-    padding: 1.3rem 3rem;
-    color: $black !important;
+.cta-link a {
+  background: $cta;
+  padding: 1.3rem 3rem;
+  color: $black !important;
+  @media only screen and (max-width: $tablet-breakpoint) {
+    padding: 0 !important;
+    color: #fff !important;
+  }
 }
 
-.border-round{
-    border-radius: 3px;
+.border-round {
+  border-radius: 3px;
 }
 
 .m-abs {
@@ -168,101 +175,103 @@
   transform: translate(-50%, -50%);
 }
 
-
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 
-.jus-cen{
-    justify-content: center;
+.jus-cen {
+  justify-content: center;
 }
 
-.space-bet{
-    justify-content: space-between;
+.space-bet {
+  justify-content: space-between;
 }
 
-.align-cen{
-    align-items: center;
+.align-cen {
+  align-items: center;
 }
 
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  top: 0;
+  align-items: center;
 
-   .swiper-container {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      position: relative;
-      top: 0;
-      align-items: center;
-
-        @media only screen and (max-width: $tablet-breakpoint) {
-  flex-direction: column;
+  @media only screen and (max-width: $tablet-breakpoint) {
+    flex-direction: column;
   }
-    }
+}
 
-    .swiper-wrapper{
-      order: 2;
-    }
+.swiper-wrapper {
+  order: 2;
+}
 
-    .swiper-button-next, .swiper-button-prev{
-      color: $black;
+.swiper-button-next,
+.swiper-button-prev {
+  color: $black;
 
-              @media only screen and (max-width: $tablet-breakpoint) {
-                top: 60%;
+  @media only screen and (max-width: $tablet-breakpoint) {
+    top: 60%;
   }
-    }
+}
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      height: 40rem;
-      // width: 300px;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 40rem;
+  // width: 300px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 
-       @media only screen and (max-width: $mobile-breakpoint) {
-        height: 26rem;
-       }
+  @media only screen and (max-width: $mobile-breakpoint) {
+    height: 26rem;
+  }
 
-      img{
-        width: 100%;
-        height: 100%;
-      }
-    }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
 
-.swiper-button-prev.swiper-button-disabled
-{
+.swiper-button-prev.swiper-button-disabled {
   opacity: 0;
 }
 
-
-.swiper-button-next.swiper-button-disabled
-{
+.swiper-button-next.swiper-button-disabled {
   opacity: 0;
 }
 
-    .border-cta{
-      border: 1px solid $cta;
-      outline: none;
-    }
+.border-cta {
+  border: 1px solid $cta;
+  outline: none;
+}
 
-    .cursor-pointer{
-      cursor: pointer;
-    }
+.cursor-pointer {
+  cursor: pointer;
+}
 
-    .checkbox{
-      display: flex;
-      align-items: baseline;
+.checkbox {
+  display: flex;
+  align-items: baseline;
+}
 
-    }
+.hamburger-box {
+  display: none !important;
+  @media only screen and (max-width: $tablet-breakpoint) {
+    display: block !important;
+  }
+}

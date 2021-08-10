@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useState } from "react";
 import House from "../pexels-pixabay-276551.jpg";
 import { useHistory } from "react-router-dom";
 
@@ -9,11 +8,6 @@ const Hero = () => {
 
   const onSearch = async () => {
     history.push(`/findHome?location=${address}`);
-    // await axios(
-    //   `https://www.mapquestapi.com/geocoding/v1/address?key=pvsghb2CWyLCu9X61thqVq2X8e5FtuP7&location=${address}`
-    // )
-    //   .then((res) => console.log(res.data.results[0].locations[0]))
-    //   .catch((err) => console.log(err));
   };
   return (
     <div className="hero">
